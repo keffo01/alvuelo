@@ -1,0 +1,553 @@
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+body {
+  background:url(http://localhost:8080/Alvuelo/assets/img/full-bloom.png); /* Nuestra imagen de fondo */
+  background-repeat:repeat; /* Indicamos que no se repetira */
+  background-attachment: fixed; /* Establecemos una posicion fija para la imagen */
+
+  font-family:helvetica, arial, sans-serif;
+  
+}
+ul li a{
+  color: #fff;
+  padding: 25px;
+
+}
+ul li{
+  margin-top: 10px;
+}
+ul{
+  margin-left:20%;
+}
+input[type="number"]{
+
+  width: 28%;
+  margin-right: 5%;
+}
+#carritomovile{
+  display: none;
+}
+#nav{
+  margin-left: 35%;
+}
+
+#btn{
+	margin-left: 0px;
+}
+#carousel{
+	height: 25%;
+}
+#ensalada {
+  width: 70%;
+  
+}
+#imgProducto{
+  width: 287px;
+  height: 225px;
+}
+#Menu{
+	height: 400px;
+	width: 400px;
+}
+#portada{
+  height: 640px;
+  width: 100%;
+}
+
+.viñeta{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  direction: rtl;
+  background-color: #0cafec;
+  top: 0;
+  position: absolute;
+  flex-direction: column;
+  z-index: 1;
+  left: 2rem;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  box-shadow: 1px 2px 14px 5px #00000070;
+  padding: 1rem;
+  &:focus {
+    outline: none;
+  }
+}
+
+.bg-skyblue{
+  background: #0cafec    !important;
+}  
+
+.box-titlename{
+  top: 68%;
+  position: absolute;
+  z-index: 1;
+  background-color: #0cafec;
+  height: 10%;
+  opacity: 95%;
+  border-bottom-right-radius: 0.5rem;
+} 
+
+.clearfix{
+  float: none;
+  clear: both;
+}
+.carousel {
+  position:relative;
+  top:0;
+}
+
+.contenedor{
+	margin-top: 12%;
+	margin-left: 1%;
+	width: 65%;
+	height: 90%;
+	background: #ffe8ba;
+	border: 3px solid #ffc107;
+	border-radius: 0.8rem;
+}
+.footer{
+  padding: 3%;
+  text-decoration: none;
+  color: white;
+  font-family: Helvetica, Arial;
+  font-size: 20px;
+  background-color: #000000;
+}
+.footer-text{
+  font-size: 15px;
+  color: #adb1b3;
+}
+.hrvertical{
+  height: 100%;
+  border-left: 1px solid #8e9192;
+  border-right: 1px solid #8e9192;
+}
+.headerCard
+{
+  font-family: Roboto;
+  font-size: 40px;
+}
+.imgPlatillo{
+	width: 400px;
+  height: 405px;
+  margin-top: -30px;
+  border-radius: 0.8rem;
+}
+.left{
+  margin-left: 58%;
+}
+.left-label-5{
+  margin-left: 25%;
+}
+.left-label-45{
+  margin-left: 65%;
+}
+.navbar {
+  position:fixed;
+  top:0px;
+  z-index:200;
+  background: transparent;
+  width:100%;
+  transition: all 1s ease;
+
+}
+.navlogo{
+ position:fixed;
+ top:0px;
+ z-index:1000;
+}
+.not-available{
+  font-size: 30px;
+  position: absolute;
+  z-index: 2;
+  background-color: black;
+  width: 91%;
+  height: 90%;
+  opacity: 70%;
+
+}
+
+.not-available-text{
+  top: 40%;
+  font-size: 30px;
+  position: relative;
+  margin-left: 25%;
+  z-index: 1;
+  color: white;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.separador{
+	padding: 40px;
+}
+
+.pop {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  transition: 0.4s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.pop a:hover {
+  color: #ccc;
+  border-radius: 999px;
+  background-color: #FAF8F3;
+  top: 0;
+  right: 25px;
+  margin-left: 50px;
+}
+
+.titlePlatillo{
+  margin-left: 48%;
+  
+  font-family: Helvetica, Arial;
+  font-size: 20px;
+  padding: 3%
+
+}
+
+.pointer{
+  cursor: pointer;
+  width: 100%;
+}
+/*carrusel movil*/
+@media (min-width: 768px) {
+
+  /* show 3 items */
+  .carousel-inner .active,
+  .carousel-inner .active + .carousel-item,
+  .carousel-inner .active + .carousel-item + .carousel-item,
+  .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item  {
+    display: block;
+  }
+
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+    transition: none;
+  }
+
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    position: relative;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -25%;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+
+  /* left or forward direction */
+  .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+  .carousel-item-next.carousel-item-left + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  /* farthest right hidden item must be abso position for animations */
+  .carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+
+  /* right or prev direction */
+  .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+  .carousel-item-prev.carousel-item-right + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+  }
+
+}
+
+/* Bootstrap Lightbox using Modal */
+
+#profile-grid { overflow: auto; white-space: normal; } 
+#profile-grid .profile { padding-bottom: 40px; }
+#profile-grid .panel { padding: 0 }
+#profile-grid .panel-body { padding: 15px }
+#profile-grid .profile-name { font-weight: bold; }
+#profile-grid .thumbnail {margin-bottom:6px;}
+#profile-grid .panel-thumbnail { overflow: hidden; }
+#profile-grid .img-rounded { border-radius: 4px 4px 0 0;}
+
+
+.carousel-control-next{
+  background-color: #007bff;
+  border-radius: 100px;
+  height: 60px;
+  width: 60px;
+  top:35%;
+}
+
+.carousel-control-prev{
+  background-color: #007bff;
+  border-radius: 100px;
+  height: 60px;
+  width: 60px;
+  top:35%;
+}
+
+/*FIn de carrusel movil*/
+
+/*para android*/
+@media screen 
+and (device-width: 360px) 
+and (device-height: 740px)
+and (-webkit-min-device-pixel-ratio: 4)   {
+
+
+
+  #categories{
+    color: #fff;  
+  }
+  #licarrito{
+    display: none;
+  }
+  #carritomovile{
+    display: block;
+    color: #fff   !important;
+  }
+  #nav{
+    margin-left: 15%;
+  }
+  #items{
+    margin-left: 0%;
+  }
+  #ensalada {
+    width: 110%;
+  }
+  input[type="number"]{
+    width: 50%;
+    margin-right: 5%;
+  }
+  .not-available{
+    width: 92%;
+    border-radius: 0.5rem;
+  }
+
+  .separador{
+    padding: 30px;
+  }
+
+}
+/*para iphone 6, 7 y 8*/
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2) { 
+  #categories{
+    color: #fff;  
+  }
+  #licarrito{
+    display: none;
+  }
+  #carritomovile{
+    display: block;
+    color: #fff   !important;
+  }
+  #nav{
+    margin-left: 15%;
+  }
+  #items{
+    margin-left: 0%;
+  }
+  #ensalada {
+    width: 110%;
+  }
+  input[type="number"]{
+    width: 50%;
+    margin-right: 5%;
+  }
+
+  .separador{
+    padding: 30px;
+  }
+
+
+}
+/*para iphone 6, 7 y 8 PLUS*/
+@media only screen 
+and (min-device-width: 414px) 
+and (max-device-width: 736px) 
+and (-webkit-min-device-pixel-ratio: 3) { 
+
+ #categories{
+  color: #fff;  
+}
+#licarrito{
+  display: none;
+}
+#carritomovile{
+  display: block;
+  color: #fff   !important;
+}
+#nav{
+  margin-left: 15%;
+}
+#items{
+  margin-left: 0%;
+}
+#ensalada {
+  width: 110%;
+}
+input[type="number"]{
+  width: 50%;
+  margin-right: 5%;
+}
+
+.separador{
+  padding: 30px;
+}
+
+}
+/*para iphone  11 */
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 812px) 
+and (-webkit-min-device-pixel-ratio: 3) { 
+
+ #categories{
+  color: #fff;  
+}
+#licarrito{
+  display: none;
+}
+#carritomovile{
+  display: block;
+  color: #fff   !important;
+}
+#nav{
+  margin-left: 15%;
+}
+#items{
+  margin-left: 0%;
+}
+#ensalada {
+  width: 100%;
+}
+input[type="number"]{
+  width: 50%;
+  margin-right: 5%;
+}
+
+.separador{
+  padding: 30px;
+}
+
+}
+/* iphone 11 Landscape */
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 812px) 
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: landscape) { 
+  #nav{
+    margin: 0%;
+  }
+  #licarrito{
+    display: block;
+  }
+  #carritomovile{
+    display: none;
+    color: #fff   !important;
+  }
+  ul {
+    margin-left: 12%;
+  }
+
+}
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (-webkit-min-device-pixel-ratio: 2) {
+  #nav{
+    margin: 0%;
+  }
+  #licarrito{
+    display: block;
+  }
+  #carritomovile{
+    display: none;
+    color: #fff   !important;
+  }
+  ul {
+    margin-left: 9%;
+  }
+  .separador{
+    padding: 30px;
+  }
+
+}
+/*Spinner para pantalla inicial*/
+
+*,*:after,*:before{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#contenedorcarga{
+  background-color: #FFFFFF;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  display: block;
+  -webkit-transition: all  1s ease;
+  -o-transition: all  1s ease;
+  transition: all  1s ease;
+  z-index: 10000;
+}
+#carga{
+  border: 15px solid #ccc;
+  border-top-color: #26C8F4;
+  border-top-style: groove;
+  height: 100px;
+  width:  100px;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-animation: girar 1.5s linear infinite;
+  -o-animation: girar 1.5s linear infinite;
+  animation: girar 1.5s linear infinite;
+}
+@keyframes girar{
+  from{transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
